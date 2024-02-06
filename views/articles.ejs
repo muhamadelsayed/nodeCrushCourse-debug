@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>articles</title>
+</head>
+<body>
+    <h1>All articles page</h1>
+    <hr>
+    <div style="background: orange; color: black;padding: 20px;">
+        <% for (let art of allArticles) { %>
+           <h1> <%= art.title %></h1>
+           <h3> <%= art.body %> </h3>
+           <br><hr>
+       <% } %>
+    </div>
+</body>
+</html>
